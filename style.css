@@ -1,0 +1,274 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
+    font-family: 'Poppins', sans-serif
+}
+
+body {
+    max-width: 100%;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+#top {
+    font-size: 20px;
+
+}
+
+/* #top::after {
+    content: "";
+    position: absolute;
+    width: 17%;
+    height: 5px;
+    background-color: black;
+    left: 4%;
+    top: 12.5%;
+    animation-name: top;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+} */
+
+@keyframes top {
+    0% {
+        width: 0;
+        left: 4%;
+
+    }
+
+    50% {
+        width: 17%;
+        left: 4%;
+    }
+
+    100% {
+        width: 4%;
+        left: 17%;
+
+    }
+
+}
+
+.nav>ul {
+    display: flex;
+    margin-left: 500px;
+}
+
+.nav>ul>li {
+    margin-left: 25px;
+    list-style: none;
+}
+
+.nav>ul>li>h3>a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-1 {
+    margin-top: 45px;
+    display: flex;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.img:hover {
+    animation-name: img;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in ease-out;
+}
+
+@keyframes img {
+    0% {
+        rotate: 360deg;
+    }
+
+}
+
+#start>h1 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.equipments {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 45px;
+    width: 500px;
+}
+
+.main-1 a {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: rgb(219, 46, 75);
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: white;
+}
+
+.logos {
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+main>section>hr {
+    width: 1050px;
+    color: gainsboro;
+}
+
+.logo {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo>a>img {
+    padding-left: 45px;
+}
+
+.popular>h2 {
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.collection>div {
+    width: 300px;
+    padding: 10px;
+    box-shadow: 0 0 50px 20px gainsboro;
+    height: 430px;
+    line-height: .5;
+
+}
+
+.fa-star {
+    color: orange;
+}
+
+
+.arrow a {
+    text-decoration: none;
+    color: rgb(219, 46, 75);
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 20px 120px 20px 20px;
+}
+
+.reviews {
+    margin-left: 90px;
+    margin-right: 100px;
+}
+
+.review {
+    display: flex;
+}
+
+.button {
+    padding-right: 30px;
+    padding-top: 40px;
+}
+
+.button a {
+    text-decoration: none;
+    color: rgb(219, 46, 75);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: rgb(1, 1, 29);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+}
+
+.icon .fa-brands {
+    background-color: rgb(34, 34, 49);
+    padding: 15px;
+    border-radius: 22px;
+    margin-left: 10px;
+}
+
+@media (max-width: 769px) {
+    #top>h3 {
+        text-align: center;
+        display: block;
+    }
+
+    .nav {
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 100px;
+    }
+
+    .main-1 {
+        display: block;
+    }
+
+    .img {
+        margin-top: 30px;
+    }
+
+    .logo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+
+    .logos>hr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+    }
+
+    .collection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .review {
+        display: block;
+    }
+}
+
+@media (max-width: 490px) {
+    .nav {
+        display: none;
+    }
+
+    .collection {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+}
